@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>React Intro</title>
+    <script src='react-dom.development.js'></script>
+    <script src="react.development.js"></script>
+</head>
+<body>
+    <div class="app">
+    </div>
+
+    <script>
+        let h1 = document.createElement("h1");
+        h1.setAttribute("align", "center");
+        h1.innerHTML = "Sample Page!"
+
+        let p = document.createElement("p");
+        p.innerHTML = "First Paragraph";
+
+        let appContainer = document.querySelector(".app");
+        appContainer.appendChild(h1);
+        appContainer.appendChild(p);
+
+    </script>
+</body>
+</html>
